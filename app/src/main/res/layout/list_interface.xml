@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/llAppList">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#F7EED3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/imgAppLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/a">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/txtAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="15dp">
+            </TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"></View>
+
+            <TextView
+                android:id="@+id/txtAppDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Description"
+                android:textColor="@color/textColor"
+                android:textStyle="italic"
+                android:layout_marginLeft="15sp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

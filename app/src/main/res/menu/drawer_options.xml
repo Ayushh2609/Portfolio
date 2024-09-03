@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/github"
+        android:title="GitHub Account"
+        android:icon="@drawable/github">
+    </item>
+
+    <item android:id="@+id/linkedIn"
+        android:title="LinkedIn Account"
+        android:icon="@drawable/linkedinlogo">
+    </item>
+
+    <item android:id="@+id/Email"
+        android:title="Email"
+        android:icon="@drawable/gmaillogo">
+    </item>
+
+    <item android:id="@+id/contactNumber"
+        android:title="Contact Me"
+        android:icon="@drawable/contactus">
+    </item>
+
+</menu>
