@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#674636"
-                    android:text="Download"
+                    android:text="GitHub Repository"
                     android:background="@drawable/button_round"
                     android:textColor="#F7EED3">
                 </androidx.appcompat.widget.AppCompatButton>

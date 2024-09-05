@@ -62,12 +62,10 @@ public class App_content_page extends AppCompatActivity {
         // Create and populate the ArrayList with image resource IDs
 //        ArrayList<Integer> imageResIds = Basic_Projects.getTicTacToe_ss();
 
-
-
-
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
         String description = intent.getStringExtra("description");
+        String moreDetails = intent.getStringExtra("moreDetails");
         int logo = intent.getIntExtra("logo" , 0);
 
         String gitRepo = intent.getStringExtra("gitRepo");
@@ -80,7 +78,7 @@ public class App_content_page extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         txtAppName.setText(name);
-        txtDescription.setText(description);
+        txtDescription.setText(description + moreDetails);
 
         imgAppLogo.setImageResource(logo);
 
@@ -91,7 +89,7 @@ public class App_content_page extends AppCompatActivity {
                 intent.setData(Uri.parse(gitRepo));
                 startActivity(intent);
 
-                Toast.makeText(App_content_page.this, "Make Sure to login in to your GitHub Acoount.", Toast.LENGTH_LONG).show();
+                Toast.makeText(App_content_page.this, "Opening GitHub Repository.", Toast.LENGTH_LONG).show();
             }
         });
 

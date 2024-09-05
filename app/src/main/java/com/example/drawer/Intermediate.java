@@ -28,7 +28,7 @@ public class Intermediate extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_intermediate, container, false);
 
-        String whatschatGIT = "https://github.com/Ayushh2609/TicTacToe.git";
+        String portfolioGit = "https://github.com/Ayushh2609/Portfolio.git";
 
         ArrayList<Integer> arrayListScreenShotsPortfolio = new ArrayList<Integer>();
         arrayListScreenShotsPortfolio.add(R.drawable.portfolio1);
@@ -41,7 +41,7 @@ public class Intermediate extends Fragment {
         recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
 
         if(arrayIntermediate.isEmpty()){
-            arrayIntermediate.add(new contactModel(R.drawable.portfoliologo , "Portfolio" , "Contains every application I have developed", "An Example of recursion also. \"You are watching Portfolio application in the portfolio application\"", arrayListScreenShotsPortfolio , whatschatGIT));
+            arrayIntermediate.add(new contactModel(R.drawable.portfoliologo , "Portfolio" , "Contains every application I have developed", "An Example of recursion also. \"You are watching Portfolio application in the portfolio application\"", arrayListScreenShotsPortfolio , portfolioGit));
         }
 
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext() , arrayIntermediate);

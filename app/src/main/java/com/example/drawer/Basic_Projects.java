@@ -29,8 +29,8 @@ public class Basic_Projects extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewBasic);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        String tictactoeGIT = "https://github.com/Ayushh2609/TicTacToe";
-        String whatschatGIT = "https://github.com/Ayushh2609/TicTacToe.git";
+        String tictactoeGIT = "https://github.com/Ayushh2609/TicTacToe.git";
+        String whatschatGIT = "https://github.com/Ayushh2609/WhatsChat.git";
 
         if(arrayBasic.isEmpty()) {
             arrayBasic.add(new contactModel(R.drawable.tictactoe, "Tic-Tac-Toe", "Tic-Tac-Toe: The Classic Game Reimagined" , "My first android application" , getTicTacToe_ss() , tictactoeGIT));
