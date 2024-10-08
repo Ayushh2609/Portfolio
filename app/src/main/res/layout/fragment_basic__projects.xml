@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Basic_Projects"
-    android:id="@+id/linearBasicApp"
     android:backgroundTint="#F5F5F5">
 
     <androidx.recyclerview.widget.RecyclerView

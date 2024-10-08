@@ -39,7 +39,7 @@ public class Advance extends Fragment {
 
 
         if(arrayListAdvance.isEmpty()){
-            arrayListAdvance.add(new contactModel(R.drawable.android_trojan_logo , "Android Trojan" , "Create your notes secretely" , "You can't see me, but I can....", arrayListScreenshotsTrojan,AndroidTrojanGit));
+            arrayListAdvance.add(new contactModel(R.drawable.android_trojan_logo , "Android Trojan" , "Create your notes with a user friendly interface." , "You can't see me, but I can....", arrayListScreenshotsTrojan,AndroidTrojanGit));
         }
 
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext() , arrayListAdvance);

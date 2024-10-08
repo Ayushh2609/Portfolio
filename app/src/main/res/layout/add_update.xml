@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity=""
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            android:backgroundTint="#C4C8BF"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="New Application"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/addContact">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textStyle="italic"
+                    android:backgroundTint="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/edtName">
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:textStyle="italic"
+                    android:backgroundTint="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="number"
+                    android:id="@+id/description">
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Detailed description"
+                    android:textStyle="italic"
+                    android:backgroundTint="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="number"
+                    android:id="@+id/moreDetails">
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Github Repo"
+                    android:textStyle="italic"
+                    android:backgroundTint="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="number"
+                    android:id="@+id/githubInput">
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ScreenShots"
+                    android:textStyle="italic"
+                    android:backgroundTint="@color/black"
+                    android:textColorHint="@color/black"
+                    android:inputType="number"
+                    android:id="@+id/ScreenShots">
+                </EditText>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_icon"
+                    android:layout_gravity="end"
+                    android:text="Save"
+                    android:id="@+id/btnSave"
+                    android:layout_margin="30dp">
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
