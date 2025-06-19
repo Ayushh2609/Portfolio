@@ -28,6 +28,8 @@ public class Advance extends Fragment {
         View view = inflater.inflate(R.layout.fragment_advance, container, false);
 
         String AndroidTrojanGit = "https://github.com/shivamsuyal/Android-Trojan-2.0.git";
+        String nukkadEats = "https://github.com/Ayushh2609/Nukkad-Eats";
+        String nukkadEatsAdmin = "https://github.com/Ayushh2609/Nukkad-Eats_Admin";
 
         ArrayList<Integer> arrayListScreenshotsTrojan = new ArrayList<Integer>();
         arrayListScreenshotsTrojan.add(R.drawable.portfolio1);
@@ -40,6 +42,8 @@ public class Advance extends Fragment {
 
         if(arrayListAdvance.isEmpty()){
             arrayListAdvance.add(new contactModel(R.drawable.android_trojan_logo , "Android Trojan" , "Create your notes with a user friendly interface." , "You can't see me, but I can....", arrayListScreenshotsTrojan,AndroidTrojanGit));
+            arrayListAdvance.add(new contactModel(R.drawable.logo_new , "Nukkad Eats" , "Tasty foods at your fingertips." , "Order your fav food anytime anywhere", arrayListScreenshotsTrojan,nukkadEats));
+            arrayListAdvance.add(new contactModel(R.drawable.logo_admin_new , "Android Trojan" , "Create your notes with a user friendly interface." , "You can't see me, but I can....", arrayListScreenshotsTrojan,nukkadEatsAdmin));
         }
 
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext() , arrayListAdvance);

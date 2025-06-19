@@ -105,6 +105,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="8dp"
             android:backgroundTint="#674636"
             android:text="Copy Git Repo"
             android:textColor="#F7EED3"
