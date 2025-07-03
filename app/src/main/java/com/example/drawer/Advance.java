@@ -53,6 +53,7 @@ public class Advance extends Fragment {
         arrayListNukkadEatsAdmin.add(R.drawable.nukkad_admin6);
 
 
+
         RecyclerView recyclerviewAdvance = view.findViewById(R.id.recyclerAdvance);
         recyclerviewAdvance.setLayoutManager(new LinearLayoutManager(getContext()));
 
